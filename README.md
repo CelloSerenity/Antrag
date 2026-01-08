@@ -2,6 +2,8 @@
 
 [![GitHub Release](https://img.shields.io/github/v/release/khcrysalis/antrag?include_prereleases)](https://github.com/khcrysalis/protokolle/releases)
 [![GitHub License](https://img.shields.io/github/license/khcrysalis/antrag?color=%23C96FAD)](https://github.com/khcrysalis/protokolle/blob/main/LICENSE)
+[![Sponsor Me](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/khcrysalis)
+[![Discord](https://img.shields.io/discord/1265361879992242196?style=flat&label=discord)](https://discord.gg/TYnUDJkG66)
 
 | ![Preview Image](demo.jpeg) |
 | :--------------------------: |
@@ -20,7 +22,7 @@ Visit [releases](https://github.com/khcrysalis/Antrag/releases) and get the late
 ## How does it work?
 
 - Establish a heartbeat with a TCP provider (the app will need this for later).
-  - For it to be successful, we need a pairing file from [JitterbugPair](https://github.com/osy/Jitterbug/releases) and a [VPN](https://apps.apple.com/us/app/stosvpn/id6744003051).
+  - For it to be successful, we need a pairing file from [idevice_pair](https://github.com/jkcoxson/idevice_pair) and a [VPN](https://apps.apple.com/us/app/localdevvpn/id6755608044).
 - When preparing the list, we need to establish another connection but for `installation_proxy` using our heartbeat provider and client handle.
 - Then we can use `installation_proxy_get_apps` using that handle to list applications.
 
