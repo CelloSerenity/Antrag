@@ -27,5 +27,14 @@
 	<array>
 		<string>localdevvpn</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>myapp</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
