@@ -86,8 +86,16 @@ extension ATSettingsView {
 			Button(.localized("Pairing File Guide"), systemImage: "questionmark.circle") {
 				UIApplication.open("https://github.com/StephenDev0/StikDebug-Guide/blob/main/pairing_file.md")
 			}
-			Button(.localized("Download StosVPN"), systemImage: "arrow.down.app") {
-				UIApplication.open("https://apps.apple.com/us/app/stosvpn/id6744003051")
+
+			if let localDevProbe = URL(string: "localdevvpn://"),
+			   UIApplication.shared.canOpenURL(localDevProbe) {
+				Button(.localized("Connect to LocalDevVPN"), systemImage: "link") {
+					UIApplication.open("localdevvpn://enable?scheme=antrag")
+				}
+			} else {
+				Button(.localized("Download StosVPN"), systemImage: "arrow.down.app") {
+					UIApplication.open("https://apps.apple.com/us/app/localdevvpn/id6755608044")
+				}
 			}
 		}
 	}
